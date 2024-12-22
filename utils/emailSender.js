@@ -16,12 +16,21 @@ export async function sendEmail(fromEmail, subject, message) {
 
     // Email content
     const mailOptions = {
-        from: fromEmail,
+        // from: fromEmail,
+        from: process.env.GMAIL_USER, // Your Gmail account
+
         to: process.env.GMAIL_USER, // Replace with your email address
         subject: subject || 'No subject',
         text: message || 'No message content',
+        replyTo: fromEmail, // Set the user's email for replies
+
     };
 
-    // Send email
-    await transporter.sendMail(mailOptions);
+     // Send email
+     try {
+        await transporter.sendMail(mailOptions);
+    } catch (error) {
+        console.error('Error sending email:', error);
+        throw new Error('Failed to send email');
+    }
 }

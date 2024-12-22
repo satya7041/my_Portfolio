@@ -16,7 +16,7 @@ const HeroSecction = () => {
                transition={{duration:0.5}} 
                className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                >
-                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r
                  from-primary-400 to-secondary-600 font-serif">
                     Hello, I&apos;m{" "}
@@ -24,6 +24,7 @@ const HeroSecction = () => {
                     </span>
                    <br></br> 
                     <TypeAnimation
+                    className=" shadow-md shadow-emerald-800"
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Satyam',
@@ -45,7 +46,7 @@ const HeroSecction = () => {
 
             </h1>
             <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-               Currently Intern at Lambert Fisher Technologies, where i am working on Frontend, Backend, manual testing, api etc. 
+               Currently Assistant Software Engineer at Lambert Fisher Technologies, where I am working on Frontend, Backend, manual testing, api etc. 
                 </p>
                 <div>  
                     <Link className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br
@@ -56,7 +57,7 @@ const HeroSecction = () => {
                       bg-transparent hover:bg-slate-800 text-white  mt-3 ">
                         <span className="block bg-[#121212] hover:bg-slate-800
                          rounded-full px-5 py-2">
-                       <Link href = "https://drive.google.com/file/d/1jwUUDTo4W6EQ8H3VJmCjhQcLzNUwnLep/view?usp=sharing"
+                       <Link href = "https://drive.google.com/file/d/1SjYaRdTPYzOowcgXaZNP98sCg9IsnSKY/view?usp=sharing"
                        >Download CV</Link>
                         </span>
                         </button>

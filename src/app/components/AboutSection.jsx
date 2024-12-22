@@ -13,12 +13,13 @@ const Tab_Data = [
             <div className="flex justify-between">
 
             <ul className="list-disc pl-2">
-                <li>Java</li>
-                <li>HTML & CSS</li>
                 <li>JavScript</li>
+                <li>Java</li>
                 <li>Typescript</li>
+                <li>HTML & CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
                 <li>Manual Testing</li>
-                <li>Git & GitHub</li>
                
             </ul>
             <ul className="list-disc pl-2 mr-10">
@@ -28,6 +29,14 @@ const Tab_Data = [
                 <li>PostgreSQL</li>
                 <li>Mongoose</li>
                 <li>Tailwind CSS</li>  
+            </ul>
+            <ul className="list-disc pl-2 mr-10">
+                <li>jwt</li>
+                <li>Restful API</li>
+                <li>Git & GitHub</li>
+                <li>Jira</li>
+                <li>Microservicesa</li>
+                
             </ul>
             </div>
         )
@@ -78,7 +87,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base md:text-lg">
-                Currently working as a Intern gaining valuable experience at Lambert Fisher Technologies, eager to secure a full-time
+                Currently working as a Assistant Software Engineer gaining valuable experience at Lambert Fisher Technologies, eager to secure a full-time
 position in the field of technology or IT. Proficient in utilizing various technologies and collaborating with team
 members to troubleshoot and resolve challenges. Actively seeking an opportunity to apply and expand my skills in
 a dynamic work environment. Committed to contributing effectively to project development and driving positive

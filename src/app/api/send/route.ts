@@ -62,10 +62,13 @@ export async function POST(req: NextRequest) {
 
     // Send mail with defined transport object
     let info = await transporter.sendMail({
-      from: email, // Sender's email (user input)
+      from:process.env.GMAIL_USER, // Sender's email (user input)
       to: process.env.GMAIL_USER, // Recipient's email (your email)
       subject: subject,
       text: message,
+      // replyTo: email, // Set the reply-to to the user's email
+      replyTo:email,
+
     });
 console.log(email, process.env.GMAIL_USER, subject);
 

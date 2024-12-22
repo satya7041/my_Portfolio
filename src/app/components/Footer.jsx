@@ -9,8 +9,8 @@ const Footer = () =>{
             <div className="container p-12 flex justify-between">
                 
                     <Link href={"/"}
-                    className="text-slate-500 font-serif text-2xl"
-         >SaTyAm
+                    className="text-slate-500 font-serif text-2xl md:text-2xl"
+         >Satyam Srivastava
       
             </Link>
               
