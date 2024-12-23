@@ -35,7 +35,7 @@ const Tab_Data = [
                 <li>Restful API</li>
                 <li>Git & GitHub</li>
                 <li>Jira</li>
-                <li>Microservicesa</li>
+                <li>Microservices</li>
                 
             </ul>
             </div>
