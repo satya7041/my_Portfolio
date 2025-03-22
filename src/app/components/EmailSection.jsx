@@ -4,11 +4,12 @@ import gitIcon from '../../../public/gitIcon.svg'
 import linkedinIcon from '../../../public/linkedinIcon.svg'
 import Link from 'next/link';
 import Image from 'next/image';
+import Loader from './Loader';
 
 const EmailSection = ()=>{
 
     const [emailSubmitted, setEmailSubmitted]  = useState(false);
-
+    const [loading, setLoading] = useState(false); 
 
     // const handleSubmit = async (e) =>{
     //     e.preventDefault();
@@ -68,7 +69,7 @@ const EmailSection = ()=>{
             subject: e.currentTarget.subject.value,
             message: e.currentTarget.message.value,
         };
-
+        setLoading(true); 
         try {
             const response = await fetch('/api/send/', {
                 method: 'POST',
@@ -85,9 +86,14 @@ const EmailSection = ()=>{
             const data = await response.json();
             console.log(data);
             setEmailSubmitted(true);
+            setTimeout(()=> {
+             window.location.reload();
+            })
         } catch (error) {
             console.error('Error:', error);
             // Handle error appropriately, e.g., show an error message to the user
+        } finally {
+            setLoading(false); // Hide loader once request is complete
         }
     };
 
@@ -157,6 +163,9 @@ const EmailSection = ()=>{
              </div>
              </div>
              <div>
+             {loading ? (
+                    <Loader />
+                ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col">
 
                     <div className="mb-6 font-mono">
@@ -216,6 +225,7 @@ const EmailSection = ()=>{
                         >Email sent successfully...!</p>
                      )}
                 </form>
+                )}
             
             </div>
             </section>

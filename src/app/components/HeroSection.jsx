@@ -46,8 +46,7 @@ const HeroSecction = () => {
 
             </h1>
             <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-               Currently Assistant Software Engineer at Lambert Fisher Technologies, where I am working on Frontend, Backend, manual testing, api etc. 
-                </p>
+            Currently working as a Software Engineer at Ameya Innovex, where I focus on frontend and backend development, manual testing, API integration, and more                </p>
                 <div>  
                     <Link className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br
                      from-blue-500 via-primary-500 to-secondary-500 mr-4 text-white
@@ -70,7 +69,8 @@ const HeroSecction = () => {
                 <div className="rounded-full bg-[#181818] w-[250px] h-[250px]
                  lg:w-[400px] lg:h-[400px] relative">
                 <Image
-                    src= "/images/portfolio_logo.avif"
+                    // src= "/images/portfolio_logo.avif"
+                    src= "/images/profileLogo2.png"
                     alt="hero-image"
                     className="absolute transform -translate-x-1/2 -translate-y-1/2
                      top-1/2 left-1/2"

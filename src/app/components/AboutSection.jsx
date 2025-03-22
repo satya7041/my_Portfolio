@@ -29,13 +29,15 @@ const Tab_Data = [
                 <li>PostgreSQL</li>
                 <li>Mongoose</li>
                 <li>Tailwind CSS</li>  
+                <li>jwt</li>
             </ul>
             <ul className="list-disc pl-2 mr-10">
-                <li>jwt</li>
                 <li>Restful API</li>
                 <li>Git & GitHub</li>
                 <li>Jira</li>
                 <li>Microservicesa</li>
+                <li>React-native</li>
+                <li>Expo</li>
                 
             </ul>
             </div>
@@ -87,11 +89,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base md:text-lg">
-                Currently working as a Assistant Software Engineer gaining valuable experience at Lambert Fisher Technologies, eager to secure a full-time
-position in the field of technology or IT. Proficient in utilizing various technologies and collaborating with team
-members to troubleshoot and resolve challenges. Actively seeking an opportunity to apply and expand my skills in
-a dynamic work environment. Committed to contributing effectively to project development and driving positive
-outcomes for the team and organization
+            Currently employed as a Software Engineer at Ameya Innovex, where I am gaining valuable experience in the technology field. Proficient in utilizing various technologies and collaborating with team members to troubleshoot and resolve challenges. Actively seeking a new opportunity to apply and further expand my skills in a dynamic work environment. Committed to contributing effectively to project development and driving positive outcomes for the team and organization.
 </p>
 <div className="flex flex-row justify-start mt-8">
     <TabButton selectTab = {() =>handleTabChange("skills")}
