@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"app\\\\components\\\\AchievementsSection.jsx -> react-animated-numbers\":{\"id\":\"app\\\\components\\\\AchievementsSection.jsx -> react-animated-numbers\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_react-animated-numbers_dist_index_js.js\"]}}"
