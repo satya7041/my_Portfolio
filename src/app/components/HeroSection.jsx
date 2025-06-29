@@ -46,7 +46,7 @@ const HeroSecction = () => {
 
             </h1>
             <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Currently working as a Software Engineer at Ameya Innovex, where I focus on frontend and backend development, manual testing, API integration, and more                </p>
+            Currently working as a Software Engineer at Digital Tech Solution, where I focus on frontend and backend development, manual testing, API integration, and more                </p>
                 <div>  
                     <Link className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br
                      from-blue-500 via-primary-500 to-secondary-500 mr-4 text-white
@@ -56,7 +56,7 @@ const HeroSecction = () => {
                       bg-transparent hover:bg-slate-800 text-white  mt-3 ">
                         <span className="block bg-[#121212] hover:bg-slate-800
                          rounded-full px-5 py-2">
-                       <Link href = "https://drive.google.com/file/d/1S2Kl7zB2-GXzJWYhs2Yo05tVtuWp-X31/view?usp=sharing"
+                       <Link href = "https://drive.google.com/file/d/1YqZDknlu1KINAl88YkwBKlsnmhL0qdfm/view?usp=drive_link"
                        >Download CV</Link>
                         </span>
                         </button>
