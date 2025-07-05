@@ -32,7 +32,7 @@ const achievementsList = [
 
 const AchievementsSection = () =>{
     return (
-        <div className="py-8 px-4  xl:gap-16 xl:px-16">
+        <div className="py-8 px-4  xl:gap-16 xl:px-16 dark:bg-black dark:text-white">
             <div
             className="border-[#33353F] border-rounded-md py-8 
             px-16 flex flex-row items-center justify-between"
@@ -43,13 +43,13 @@ const AchievementsSection = () =>{
                 className="flex flex-col items-center justify-center mx-4">
                     <h2
                     // className="text-white text-4xl font-bold">{achievement.value}</h2>
-                    className="text-white text-4xl font-bold flex flex-row">
+                    className="text-black text-4xl font-bold flex flex-row dark:text-white">
                         {achievement.prefix}
                         <AnimatedNumbers
                         includeComma
                         animateToNumber={parseInt(achievement.value)}
                         locale="en-US"
-                        className="text-white text-4xl font-bold"
+                        className="text-black text-4xl font-bold dark:text-white"
                         configs={(_,index) => {
                             return {
                                 mass:1,
@@ -62,7 +62,7 @@ const AchievementsSection = () =>{
                         {achievement.postfix}
                     </h2>
                     <p
-                    className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+                    className="text-black text-base dark:text-white">{achievement.metric}</p>
                 </div>
             )
         })}

@@ -138,15 +138,15 @@ const EmailSection = ()=>{
 
     return ( 
     <section id="contact"
-    className=" grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+    className=" grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative dark:bg-black dark:text-white">
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full 
-        h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+        h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 dark:bg-black dark:text-white"></div>
         <div className="z-10">
             <h5 
-            className="text-xl font-bold text-white my-2"
+            className="text-xl font-bold text-black my-2 dark:text-white"
             >Let&apos;s Connect</h5>
             <p 
-            className="text-[#ADB7BE] mb-4 max-w-md">
+            className="text-black mb-4 max-w-md dark:text-white">
                 {" "}
                 I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, 
 {/*                 to write I'll use I&apos;ll */}
@@ -170,7 +170,7 @@ const EmailSection = ()=>{
 
                     <div className="mb-6 font-mono">
                     <label htmlFor="email" type="email"
-                     className="text-white block mb-2 text-sm font-medium"
+                     className="text-black block mb-2 text-sm font-medium dark:text-white"
                     >Your Email</label>
                     <input 
                     name="email"
@@ -180,8 +180,8 @@ const EmailSection = ()=>{
         //   onChange={handleChange}
 
                      required 
-                     className="bg-[#18191E] border border-[#33353F]
-                      placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                     className="bg-white border border-[#33353F]
+                      placeholder-[#9CA2A9] text-gray-600 text-sm rounded-lg block w-full p-2.5  dark:text-white"
                      placeholder="your_mail@gmail.com" 
                      />
                      </div>
@@ -190,7 +190,7 @@ const EmailSection = ()=>{
                     <label 
                     htmlFor="subject" 
                     type="email"
-                     className="text-white block text-sm mb-2 font-medium"
+                     className="text-black block text-sm mb-2 font-medium dark:text-white"
                     >Subject</label>
                     <input 
                     name="subject"
@@ -199,13 +199,13 @@ const EmailSection = ()=>{
         //              value={formData.subject}
         //   onChange={handleChange}
                      required 
-                     className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                     className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-gray-800 text-sm rounded-lg block w-full p-2.5"
                      placeholder="Just saying hi!" 
                      />
                      </div>
                      <div className="mb-6">
                         <label htmlFor="message"
-                        className="text-white block text-sm mb-2 font-medium"
+                        className="text-black block text-sm mb-2 font-medium dark:text-white"
                         >
                             Message
                         </label>
@@ -213,12 +213,12 @@ const EmailSection = ()=>{
                         // value={formData.message}
                         // onChange={handleChange}
                         name="message" id="message"
-                        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                        className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5 dark:text-white"
                        placeholder="Let's Talk about..." 
                        />
                      </div>
                      <button type="submit"
-                     className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                     className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full dark:bg-secondary-400"
                      >Send Message</button>
                      {emailSubmitted && (
                         <p className="text-green-500 text-sm mt-2"

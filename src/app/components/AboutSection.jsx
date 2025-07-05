@@ -79,7 +79,7 @@ const AboutSection = () => {
     
     return<section
     id="about"
-     className="text-white ">
+     className="text-black dark:bg-black dark:text-white">
   <div className="md:grid md:grid-cols-2 gap-8 items-center
    py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
@@ -87,7 +87,7 @@ const AboutSection = () => {
          src='/images/about.jpg'width={500} height={500}
             alt="about_image"/>
         <div className="mt-4 md:mt-0 text-left flex flex-col">
-            <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+            <h2 className="text-4xl font-bold text-black mb-4 dark:bg-black dark:text-white">About Me</h2>
             <p className="text-base md:text-lg">
             Currently employed as a Software Engineer at Digital Tech Solution, where I am gaining valuable experience in the technology field. Proficient in utilizing various technologies and collaborating with team members to troubleshoot and resolve challenges. Actively seeking a new opportunity to apply and further expand my skills in a dynamic work environment. Committed to contributing effectively to project development and driving positive outcomes for the team and organization.
 </p>

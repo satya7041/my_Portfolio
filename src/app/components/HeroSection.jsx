@@ -16,7 +16,7 @@ const HeroSecction = () => {
                transition={{duration:0.5}} 
                className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                >
-                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+                <h1 className="text-black mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold dark:text-white">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r
                  from-primary-400 to-secondary-600 font-serif">
                     Hello, I&apos;m{" "}
@@ -45,7 +45,7 @@ const HeroSecction = () => {
     />
 
             </h1>
-            <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+            <p className="text-black text-base sm:text-lg mb-6 lg:text-xl dark:text-white">
             Currently working as a Software Engineer at Digital Tech Solution, where I focus on frontend and backend development, manual testing, API integration, and more                </p>
                 <div>  
                     <Link className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br
@@ -66,13 +66,12 @@ const HeroSecction = () => {
             initial = {{opacity:0, scale:0.5}}
               animate={{opacity:1, scale:1}}
                transition={{duration:0.5}}  className="col-span-4 place-self-center mt-4 lg:mt-0" >
-                <div className="rounded-full bg-[#181818] w-[250px] h-[250px]
-                 lg:w-[400px] lg:h-[400px] relative">
+                <div className="rounded-full bg-[#acaca0] w-[250px] h-[250px]
+                 lg:w-[400px] lg:h-[400px] relative dark:bg-[#efefef]">
                 <Image
-                    // src= "/images/portfolio_logo.avif"
-                    src= "/images/profileLogo2.png"
+                    src= "/images/Satyamprofile.jpg"
                     alt="hero-image"
-                    className="absolute transform -translate-x-1/2 -translate-y-1/2
+                    className="absolute transform -translate-x-1/2 -translate-y-1/2 rounded-full
                      top-1/2 left-1/2"
                     width={300}
                     height={300}
