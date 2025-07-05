@@ -56,8 +56,8 @@ const HeroSecction = () => {
                       bg-transparent hover:bg-slate-800 text-white  mt-3 ">
                         <span className="block bg-[#121212] hover:bg-slate-800
                          rounded-full px-5 py-2">
-                       <Link href = "https://drive.google.com/file/d/1YqZDknlu1KINAl88YkwBKlsnmhL0qdfm/view?usp=drive_link"
-                       >Download CV</Link>
+                       <Link href = "https://drive.google.com/file/d/1eeYr9otenhBJEjud1FUhtZfiBwHT50Gv/view?usp=sharing"
+                       >Download Resume</Link>
                         </span>
                         </button>
                  </div>
